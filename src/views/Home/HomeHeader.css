@@ -1,0 +1,111 @@
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 15px;
+    background-color: rgb(25, 40, 65);
+    border-bottom: 3px solid rgb(50, 80, 120);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(120, 169, 208);
+    margin-bottom: 10px;
+}
+
+.playback-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: rgb(40, 60, 90);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: fit-content;
+}
+
+.playback-controls label {
+    color: rgb(180, 220, 255);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.playback-controls input {
+    width: 60px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: rgb(30, 45, 70);
+    color: white;
+    text-align: center;
+    outline: none;
+}
+
+.playback-controls input:focus {
+    background-color: rgb(50, 70, 100);
+}
+
+.playback-controls button {
+    background-color: rgb(80, 150, 255);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.playback-controls button:hover {
+    background-color: rgb(100, 170, 255);
+}
+
+.playback-controls button:active {
+    transform: scale(0.95);
+}
+
+.progress-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgb(30, 45, 70);
+    border-radius: 5px;
+    padding: 5px;
+    color: rgb(180, 220, 255);
+    font-weight: bold;
+    text-align: center;
+}
+
+.get-notes-btn {
+    background-color: rgb(255, 140, 60);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-left: 10px;
+}
+
+.get-notes-btn:hover {
+    background-color: rgb(255, 160, 80);
+}
+
+.get-notes-btn:active {
+    transform: scale(0.95);
+}
+
+.loading-indicator {
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 6px 12px;
+    border-radius: 4px;
+    display: inline-block;
+}

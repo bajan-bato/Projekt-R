@@ -1,0 +1,37 @@
+.grids-keys-container {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.grids {
+    display: flex;
+    position: absolute;
+    height: 100%;
+}
+
+.grid {
+    width: 50px;
+    box-sizing: border-box;
+    border: 1px solid rgb(21, 32, 44);
+    height: 100%;
+    z-index: 2;
+}
+
+.dividers {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    z-index: 3;
+}
+
+.divider {
+    width: 200px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.345);
+    height: 100%;
+    z-index: 3;
+}
+
+.note {
+    z-index: 2;
+}

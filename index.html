@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + React</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  <script src="/instruments/acoustic_bass-ogg.js"></script>
+  <script src="/instruments/acoustic_grand_piano-ogg.js"></script>
+  <script src="/instruments/acoustic_guitar_steel-ogg.js"></script>
+  <script src="/instruments/baritone_sax-ogg.js"></script>
+  <script src="/instruments/brass_section-ogg.js"></script>
+  <script src="/instruments/cello-ogg.js"></script>
+  <script src="/instruments/church_organ-ogg.js"></script>
+  <script src="/instruments/clarinet-ogg.js"></script>
+  <script src="/instruments/distortion_guitar-ogg.js"></script>
+  <script src="/instruments/electric_bass_finger-ogg.js"></script>
+  <script src="/instruments/electric_bass_pick-ogg.js"></script>
+  <script src="/instruments/electric_piano_1-ogg.js"></script>
+  <script src="/instruments/flute-ogg.js"></script>
+  <script src="/instruments/steel_drums-ogg.js"></script>
+  <script src="/instruments/trombone-ogg.js"></script>
+  <script src="/instruments/trumpet-ogg.js"></script>
+  <script src="/instruments/violin-ogg.js"></script>
+
+
+  <script>
+    window.Soundfont = {
+      "acoustic-bass": MIDI.Soundfont["acoustic_bass"],
+      "acoustic-grand-piano": MIDI.Soundfont["acoustic_grand_piano"],
+      "acoustic-guitar-steel": MIDI.Soundfont["acoustic_guitar_steel"],
+      "baritone-sax": MIDI.Soundfont["baritone_sax"],
+      "brass-section": MIDI.Soundfont["brass_section"],
+      "cello": MIDI.Soundfont["cello"],
+      "church-organ": MIDI.Soundfont["church_organ"],
+      "clarinet": MIDI.Soundfont["clarinet"],
+      "distortion-guitar": MIDI.Soundfont["distortion_guitar"],
+      "electric-bass-finger": MIDI.Soundfont["electric_bass_finger"],
+      "electric_bass_pick": MIDI.Soundfont["electric_bass_pick"],
+      "electric_piano_1": MIDI.Soundfont["electric_piano_1"],
+      "flute": MIDI.Soundfont["flute"],
+      "steel_drums": MIDI.Soundfont["steel_drums"],
+      "trombone": MIDI.Soundfont["trombone"],
+      "trumpet": MIDI.Soundfont["trumpet"],
+      "violin": MIDI.Soundfont["violin"]
+    };
+
+    window.instrumentsLoaded = true;
+  </script>
+</body>
+
+</html>

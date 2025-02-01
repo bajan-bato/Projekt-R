@@ -1,0 +1,87 @@
+.notes {
+    max-height: 100%;
+    background-color: rgb(40, 55, 80);
+    display: grid;
+    min-width: 100%;
+    max-width: 100%;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 5fr 2fr;
+    user-select: none;
+    overflow: hidden;
+}
+
+
+.piano {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.edit {
+    grid-area: 1 / 2 / 2 / 3;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+.edit-content {
+    border: 1px black;
+    position: relative;
+    overflow: hidden;
+}
+
+.note-editor {
+    grid-area: 2 / 2 / 3 / 3;
+    position: relative;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+.cell {
+    min-height: 20px;
+    box-sizing: border-box;
+    text-align: right;
+    padding-right: 7px;
+    font-size: small;
+    align-content: center;
+    border: 1px solid darkgray;
+}
+
+.piano .cell:hover {
+    background-color: gray;
+}
+
+.piano .white {
+    background-color: whitesmoke;
+    min-height: 30px;
+}
+
+.piano .black {
+    width: 70%;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    min-height: 20px;
+    z-index: 2;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.piano .double {
+    min-height: 40px;
+}
+
+.edit .white {
+    background-color: rgb(57, 75, 96);
+    border:1px solid rgb(38, 57, 78);
+    text-align: left;
+    color: rgba(193, 201, 206, 0);
+    padding-left: 5px;
+}
+
+.edit .black {
+    background-color: rgb(38, 57, 78);
+    border: none;
+    text-align: left;
+    color: rgba(193, 201, 206, 0);
+    padding-left: 5px;
+}

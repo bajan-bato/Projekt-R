@@ -1,0 +1,52 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Osigurava da cijeli prostor koristi vaš layout */
+    overflow: hidden; /* Sprječava neželjeno scrollanje */
+}
+
+.homepage {
+    display: grid;
+    grid-template-rows: 1fr 3fr 2fr; /* Header zauzima 1/6, ostatak zauzima 5/6 */
+    grid-template-columns: minmax(300px, 1fr) 80%; /* TracksList zauzima 20%, ostalo 80% */
+    height: 100vh; /* Visina ekrana */
+    width: 100vw; /* Širina ekrana */
+    background-color: rgb(50, 65, 90);
+}
+
+/* Header */
+.homepage > :nth-child(1) {
+    grid-column: 1 / 3; /* Header zauzima cijelu širinu (oba stupca) */
+    grid-row: 1 / 2; /* Zauzima prvi redak */
+    background-color: rgb(35, 45, 70);
+}
+
+/* TracksList */
+.homepage > :nth-child(2) {
+    grid-column: 1 / 2; /* TracksList u prvom stupcu */
+    grid-row: 2 / 4; /* TracksList zauzima prostor ispod headera */
+    background-color: #eaeaea;
+    overflow-y: auto; /* Scroll ako ima puno trackova */
+    background-color: rgb(40, 55, 80);
+}
+
+/* ProjectPlayer */
+.homepage > :nth-child(3) {
+    grid-column: 2 / 3; /* ProjectPlayer u drugom stupcu */
+    grid-row: 2 / 3; /* Između headera i outputs */
+    height: 100%; /* Zauzima 3/6 visine */
+    background-color: rgb(50, 65, 90);
+    overflow: auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* Outputs */
+.homepage > :nth-child(4) {
+    grid-column: 2 / 3; /* Outputs u drugom stupcu */
+    grid-row: 3 / 4; /* Nalazi se ispod ProjectPlayer */
+    height: 100%; 
+    background-color: rgb(29, 46, 76);
+    overflow: auto;
+    position: relative;
+}

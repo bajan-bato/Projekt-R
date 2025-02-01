@@ -1,0 +1,76 @@
+.track {
+    min-width: minmax(80%, 500px);
+    min-height: 180px; /* Visina proporcionalno manja od širine */
+    margin: 10px auto; /* Razmak između trackova i centriranje */
+    padding-top: 5px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(57, 125, 181); /* Svjetliji outline */
+    background-color: rgb(138, 202, 255); /* Pozadinska boja */
+    border-radius: 4px; /* Špičasti rubovi */
+    transition: all 0.2s ease-in-out; /* Animacija za hover i klik */
+}
+
+.track:hover {
+    transform: scale(1.02); /* Malo povećanje na hover */
+}
+
+.track:active {
+    transform: scale(0.98); /* Malo smanjenje na klik */
+}
+
+.track .trackName {
+    font-size: 18px; /* Veći font za ime tracka */
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: center;
+    width: 90%; /* Prilagođavanje širine */
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #b4b4b4;
+}
+
+.track .trackName:focus {
+    border-bottom: 2px solid #555; /* Naglašavanje pri fokusu */
+}
+
+.track .trackOutput {
+    width: 60%; /* Širina output polja */
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 4px;
+    margin-bottom: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+.track .trackOutput:focus {
+    border-color: #555; /* Fokusirano polje */
+}
+
+.track .trackOutput::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* Uklanja default spinner */
+}
+
+.track button {
+    background-color: #ff4d4d; /* Crvena boja za Remove */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-size: 14px;
+}
+
+.track button:hover {
+    background-color: #ff6666; /* Svjetlija na hover */
+}
+
+.track button:active {
+    transform: scale(0.95); /* Smanjenje na klik */
+}

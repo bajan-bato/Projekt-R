@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-shadow: none;
+}
+
+.editor {
+    display: grid;
+    grid-template-rows: 15% 85%;
+    grid-template-columns: 1fr 4fr;
+    max-width: 100vw;
+    max-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.notes-list {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    border-bottom: 2px solid #ccc;
+    gap: 2px;
+}
+
+.settings-list {
+    display: flex;
+    justify-content: center;
+    background-color: #253047; /* Tamnoplava pozadina */
+    color: #ffffff; /* Bijeli tekst */
+    grid-column: 1 / 3;
+    text-align: center;
+    font-family: "Sans-Serif";
+    padding: 20px;
+    align-items: center;
+}
+
+.settings-list h1 {
+    color: #ffffff; /* Bijeli tekst */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+}
+
